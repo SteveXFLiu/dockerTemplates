@@ -1,0 +1,22 @@
+services:
+  rstudio:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: rstudio
+
+    platform: linux/amd64
+    ports:
+      - "8787:8787"
+    volumes:
+      - type: bind
+        source: .
+        target: /home/rstudio
+          #      - type: bind
+          #        source: .config/rstudio
+          #        target: /home/rstudio/.config/rstudio
+          #      - type: bind
+          #        source: ~/.Renviron
+          #        target: /home/rstudio/.Renviron
+    environment:
+      - PASSWORD=rstudio

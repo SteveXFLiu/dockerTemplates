@@ -1,0 +1,30 @@
+---
+title: "A Test of Quarto in Docker"
+author: 
+    name: Steve Liu
+    email: stevexfliu@gmail.com
+    affiliation: Nerdie Quant
+date: "8/2/2024"
+abstract: |
+  This is a test of running Quarto in Docker. I tested mathematical symbols, Python
+  and R code in this file to see whether they work.
+keywords:
+    - Quarto
+    - Docker
+format:
+    html:
+        theme: litera
+    pdf:
+        documentclass: article
+        papersize: a4paper
+pdf-engine: pdflatex
+---
+
+## Introduction
+This is a test of running Quarto in Docker.
+
+## Mathematical Symbols
+Quarto supports mathematical symbols: 
+$$
+f(x) = \frac{1}{\sigma\sqrt{2\pi}}e^{\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^2}
+$$
